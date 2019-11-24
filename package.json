@@ -1,0 +1,20 @@
+{
+  "name": "fcc-random-quote",
+  "version": "1.0.0",
+  "description": "freecodecamp front end project - get new random quote when click button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonidas-I/fcc-random-quote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonidas-I/fcc-random-quote/issues"
+  },
+  "homepage": "https://github.com/Leonidas-I/fcc-random-quote#readme"
+}

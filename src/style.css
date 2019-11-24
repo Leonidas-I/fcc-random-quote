@@ -1,0 +1,22 @@
+body {
+  background-color: violet;
+}
+.quotebox {
+  height: auto;
+  width: 750px;
+  background-color: white;
+  margin: 150px auto;
+  text-align: center;
+  padding: 30px 30px;
+}
+#newquote-button {
+  margin-right: 20px;
+  float: right;
+}
+#textquote, #author {
+  font-size: 30px;
+  font-family: lucida console;
+}
+.btn {
+  font-size: 20px;
+}
