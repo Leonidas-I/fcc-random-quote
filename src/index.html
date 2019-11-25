@@ -1,24 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
-<div class='quotebox'>
-  <div class='blockquote-reverse'>
-    <i class='fa fa-quote-left'></i> <span id='textquote'> Here is the quote </span><i class=' fa fa-quote-right'></i>
+<body>
+  <div id='quotebox'>
+    <div class='blockquote-reverse'>
+      <i class='fas fa-quote-left fa-lg'></i> <span id='textquote'> Here is the quote </span><i class=' fas fa-quote-right fa-lg'></i>
+      <br><br>
+      <i class='fa fa-minus fa-sm'></i> <span id='author'> author's name </span> <i class='fas fa-minus fa-sm'></i>
+    </div>
     <br>
-    <i class='fa fa-minus'></i> <span id='author'> author's name </span> <i class='fa fa-minus'></i>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-xs-4 col-md-4 col-lg-4'>
+          <a href="#" id='twitter-button' target='_blank'><i class='fab fa-twitter-square fa-2x'></i></a>
+          
+          <a href="#" id='facebook-button' target='_blank'><i class='fab fa-facebook-square fa-2x'></i></a>
+  
+          <a href="#" id='github-button' target='_blank'><i class='fab fa-github-square fa-2x'></i></a>
+  
+          <a href="#" id='linkedin-button' target='_blank'><i class='fab fa-linkedin fa-2x'></i></a>
+        </div>
+        <div class='col-xs-4 col-md-4 col-lg-4'> </div>
+        <div class='col-xs-4 col-md-4 col-lg-4'>
+          <button class='btn btn-default' id='newquote-button'>New Quote</button>
+        </div>
+      </div> 
+    </div>   
   </div>
-  <br>
-  <div class='row'>
-    <div class='col-xs-6'>
-      <a href="#" class='btn btn-default' id='twitter-button' target='_blank'><i class='fa fa-twitter'></i></a>
-      <a href="#" class='btn btn-default' id='tumblr-button' target='_blank'><i class='fa fa-tumblr'></i></a>
-      <a href="#" class='btn btn-default' id='facebook-button' target='_blank'><i class='fa fa-facebook'></i></a>
-    </div>
-    <div class='col-xs-6'>
-      <button class='btn btn-default' id='newquote-button'>New Quote</button>
-    </div>
-  </div>    
-</div>
-<div class='text-center' style='color:white; font-size: 20px'>
-  <p>Made by <a href='https://codepen.io/Lucjfer' target='_blank' style='color: white'>Leonidas-I</p>
-</div>  
+  <div class='text-center' style='color:black; font-size: 1.5em'>
+    <p>Code by <a href='https://github.com/Leonidas-I' target='_blank' style='color: bisque'>Leonidas-I</a> aka TriPhan</p>
+  </div>  
+</body>
+</html>

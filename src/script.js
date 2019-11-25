@@ -1,12 +1,15 @@
-var colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];
+import $ from 'jquery';
+import 'bootstrap';
+import './style.scss';
+import './fontawesome5';
 
-var apilink = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?";
-var quote = function(data){
+const colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];
+
+const apilink = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?";
+const quote = (data) => {
   $("#textquote").text(data.quoteText);
   $("#author").text(data.quoteAuthor);
-  var thanhngu = data.quoteText;
-  //$("#textquote").html(thanhngu);
-  var tweet = "https://twitter.com/intent/tweet?text=" + '"' + data.quoteText + '"' + ' ' + data.quoteAuthor;
+  const tweet = "https://twitter.com/intent/tweet?text=" + '"' + data.quoteText + '"' + ' ' + data.quoteAuthor;
   $("#twitter-button").attr("href", tweet);
   if (data.quoteAuthor == "") {
     $("#author").text("NoName");
@@ -14,7 +17,7 @@ var quote = function(data){
 }
 
 function getQuote() {
-  var color = Math.floor(Math.random() * colors.length);
+  const color = Math.floor(Math.random() * colors.length);
   $(".btn").css("color", "white");
   $("body").css("background-color", colors[color]);
   $(".btn").css("background-color", colors[color]);
@@ -26,14 +29,14 @@ function getQuote() {
 }
 
 function openlink(){
-  $("#tumblr-button").attr("href", "https://tumblr.com");
   $("#facebook-button").attr("href", "https://facebook.com");
+  $("#github-button").attr("href", "https://github.com");
+  $("#linkedin-button").attr("href", "https://linkedin.com");
  }
 
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', () => {
   getQuote();
   $("#newquote-button").on("click", getQuote);
-  //$("#newquote-button").on("click", changecolor);
   
-  $("#tumblr-button, #facebook-button").on("click", openlink);
+  $("#twitter-button, #facebook-button, #github-button, #linkedin-button",).on("click", openlink);
 });

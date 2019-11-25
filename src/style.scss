@@ -1,22 +1,40 @@
+@import '~bootstrap/scss/bootstrap';
+
 body {
-  background-color: violet;
-}
-.quotebox {
-  height: auto;
-  width: 750px;
-  background-color: white;
-  margin: 150px auto;
+  background-color: silver;
   text-align: center;
+  font-family: monospace, 'Courier New', Courier;
+}
+#quotebox {
+  height: auto;
+  width: 80vw;
+  font-size: 1.5em;
+  background-color: mistyrose;
+  margin: 100px auto;
   padding: 30px 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px grey;
+  #textquote {
+    text-align: left;
+  }
+  #author {
+    text-align: right;
+  }
 }
 #newquote-button {
-  margin-right: 20px;
-  float: right;
-}
-#textquote, #author {
-  font-size: 30px;
-  font-family: lucida console;
+  position: relative;
 }
 .btn {
   font-size: 20px;
+}
+p {
+  font-style: italic;
+  a {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+    transform: scale(0.75);
+  }
 }
