@@ -37,6 +37,8 @@ function openlink(){
 document.addEventListener('DOMContentLoaded', () => {
   getQuote();
   $("#newquote-button").on("click", getQuote);
-  
+  $("#searchbox").keydown((event) => {
+    if (event.keyCode === 13) {getQuote}
+  });    
   $("#twitter-button, #facebook-button, #github-button, #linkedin-button",).on("click", openlink);
 });
