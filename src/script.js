@@ -33,12 +33,12 @@ function openlink(){
   $("#github-button").attr("href", "https://github.com");
   $("#linkedin-button").attr("href", "https://linkedin.com");
  }
+ getQuote();
 
 document.addEventListener('DOMContentLoaded', () => {
-  getQuote();
   $("#newquote-button").on("click", getQuote);
-  $("#searchbox").keydown((event) => {
-    if (event.keyCode === 13) {getQuote}
+  $("#newquote-button").keydown((event) => {
+    if (event.keyCode === 13 || 32) {getQuote}
   });    
   $("#twitter-button, #facebook-button, #github-button, #linkedin-button",).on("click", openlink);
 });

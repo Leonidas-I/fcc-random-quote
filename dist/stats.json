@@ -4,16 +4,16 @@
   "warnings": [
   ],
   "version": "4.41.2",
-  "hash": "63cc7ec18912d27c18f4",
-  "time": 30024,
-  "builtAt": 1574736517646,
+  "hash": "15b19ab4a43c46dcd9de",
+  "time": 35303,
+  "builtAt": 1574759401248,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-random-quote/dist",
   "assetsByChunkName": {
     "common": "common.d33a9a336aead02ddf50.js",
     "main": [
       "main.1a65479428d1d9613da5.css",
-      "main.bae527449e9dcb10a0c7.js"
+      "main.27c51014b1bc887af8f1.js"
     ],
     "vendor": "vendor.e5e4409e787771db640b.js"
   },
@@ -58,8 +58,8 @@
       "emitted": true
     },
     {
-      "name": "main.bae527449e9dcb10a0c7.js",
-      "size": 7529,
+      "name": "main.27c51014b1bc887af8f1.js",
+      "size": 7537,
       "chunks": [
         1
       ],
@@ -98,7 +98,7 @@
         "common.d33a9a336aead02ddf50.js",
         "vendor.e5e4409e787771db640b.js",
         "main.1a65479428d1d9613da5.css",
-        "main.bae527449e9dcb10a0c7.js"
+        "main.27c51014b1bc887af8f1.js"
       ],
       "children": {
       },
@@ -117,7 +117,7 @@
         "common.d33a9a336aead02ddf50.js",
         "vendor.e5e4409e787771db640b.js",
         "main.1a65479428d1d9613da5.css",
-        "main.bae527449e9dcb10a0c7.js"
+        "main.27c51014b1bc887af8f1.js"
       ],
       "children": {
       },
@@ -1881,15 +1881,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 171897,
+      "size": 171907,
       "names": [
         "main"
       ],
       "files": [
         "main.1a65479428d1d9613da5.css",
-        "main.bae527449e9dcb10a0c7.js"
+        "main.27c51014b1bc887af8f1.js"
       ],
-      "hash": "f71ed72c22e5c115e26d",
+      "hash": "804c1aacc29621c725f2",
       "siblings": [
         0,
         2
@@ -2229,7 +2229,7 @@
           "name": "./src/script.js + 1 modules",
           "index": 0,
           "index2": 13,
-          "size": 2141,
+          "size": 2151,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2274,7 +2274,7 @@
               "name": "./src/script.js",
               "index": 0,
               "index2": 13,
-              "size": 1717,
+              "size": 1727,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -2308,7 +2308,7 @@
                 "ModuleConcatenation bailout: Module is an entry point"
               ],
               "depth": 0,
-              "source": "import $ from 'jquery';\nimport 'bootstrap';\nimport './style.scss';\nimport './fontawesome5';\nvar colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];\nvar apilink = \"https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?\";\n\nvar quote = function quote(data) {\n  $(\"#textquote\").text(data.quoteText);\n  $(\"#author\").text(data.quoteAuthor);\n  var tweet = \"https://twitter.com/intent/tweet?text=\" + '\"' + data.quoteText + '\"' + ' ' + data.quoteAuthor;\n  $(\"#twitter-button\").attr(\"href\", tweet);\n\n  if (data.quoteAuthor == \"\") {\n    $(\"#author\").text(\"NoName\");\n  }\n};\n\nfunction getQuote() {\n  var color = Math.floor(Math.random() * colors.length);\n  $(\".btn\").css(\"color\", \"white\");\n  $(\"body\").css(\"background-color\", colors[color]);\n  $(\".btn\").css(\"background-color\", colors[color]);\n  $(\".fa-minus, .fa-quote-left, .fa-quote-right\").css(\"color\", colors[color]);\n  $(\".fa-quote-right, .fa-quote-left\").css(\"font-size\", \"50px\");\n  $(\"#textquote, #author\").css(\"color\", colors[color]);\n  $.getJSON(apilink, quote, 'jsonp');\n}\n\nfunction openlink() {\n  $(\"#facebook-button\").attr(\"href\", \"https://facebook.com\");\n  $(\"#github-button\").attr(\"href\", \"https://github.com\");\n  $(\"#linkedin-button\").attr(\"href\", \"https://linkedin.com\");\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  getQuote();\n  $(\"#newquote-button\").on(\"click\", getQuote);\n  $(\"#searchbox\").keydown(function (event) {\n    if (event.keyCode === 13) {\n      getQuote;\n    }\n  });\n  $(\"#twitter-button, #facebook-button, #github-button, #linkedin-button\").on(\"click\", openlink);\n});"
+              "source": "import $ from 'jquery';\nimport 'bootstrap';\nimport './style.scss';\nimport './fontawesome5';\nvar colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];\nvar apilink = \"https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?\";\n\nvar quote = function quote(data) {\n  $(\"#textquote\").text(data.quoteText);\n  $(\"#author\").text(data.quoteAuthor);\n  var tweet = \"https://twitter.com/intent/tweet?text=\" + '\"' + data.quoteText + '\"' + ' ' + data.quoteAuthor;\n  $(\"#twitter-button\").attr(\"href\", tweet);\n\n  if (data.quoteAuthor == \"\") {\n    $(\"#author\").text(\"NoName\");\n  }\n};\n\nfunction getQuote() {\n  var color = Math.floor(Math.random() * colors.length);\n  $(\".btn\").css(\"color\", \"white\");\n  $(\"body\").css(\"background-color\", colors[color]);\n  $(\".btn\").css(\"background-color\", colors[color]);\n  $(\".fa-minus, .fa-quote-left, .fa-quote-right\").css(\"color\", colors[color]);\n  $(\".fa-quote-right, .fa-quote-left\").css(\"font-size\", \"50px\");\n  $(\"#textquote, #author\").css(\"color\", colors[color]);\n  $.getJSON(apilink, quote, 'jsonp');\n}\n\nfunction openlink() {\n  $(\"#facebook-button\").attr(\"href\", \"https://facebook.com\");\n  $(\"#github-button\").attr(\"href\", \"https://github.com\");\n  $(\"#linkedin-button\").attr(\"href\", \"https://linkedin.com\");\n}\n\ngetQuote();\ndocument.addEventListener('DOMContentLoaded', function () {\n  $(\"#newquote-button\").on(\"click\", getQuote);\n  $(\"#newquote-button\").keydown(function (event) {\n    if (event.keyCode === 13 || 32) {\n      getQuote;\n    }\n  });\n  $(\"#twitter-button, #facebook-button, #github-button, #linkedin-button\").on(\"click\", openlink);\n});"
             },
             {
               "id": null,
@@ -5032,7 +5032,7 @@
       "name": "./src/script.js + 1 modules",
       "index": 0,
       "index2": 13,
-      "size": 2141,
+      "size": 2151,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -5077,7 +5077,7 @@
           "name": "./src/script.js",
           "index": 0,
           "index2": 13,
-          "size": 1717,
+          "size": 1727,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -5111,7 +5111,7 @@
             "ModuleConcatenation bailout: Module is an entry point"
           ],
           "depth": 0,
-          "source": "import $ from 'jquery';\nimport 'bootstrap';\nimport './style.scss';\nimport './fontawesome5';\nvar colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];\nvar apilink = \"https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?\";\n\nvar quote = function quote(data) {\n  $(\"#textquote\").text(data.quoteText);\n  $(\"#author\").text(data.quoteAuthor);\n  var tweet = \"https://twitter.com/intent/tweet?text=\" + '\"' + data.quoteText + '\"' + ' ' + data.quoteAuthor;\n  $(\"#twitter-button\").attr(\"href\", tweet);\n\n  if (data.quoteAuthor == \"\") {\n    $(\"#author\").text(\"NoName\");\n  }\n};\n\nfunction getQuote() {\n  var color = Math.floor(Math.random() * colors.length);\n  $(\".btn\").css(\"color\", \"white\");\n  $(\"body\").css(\"background-color\", colors[color]);\n  $(\".btn\").css(\"background-color\", colors[color]);\n  $(\".fa-minus, .fa-quote-left, .fa-quote-right\").css(\"color\", colors[color]);\n  $(\".fa-quote-right, .fa-quote-left\").css(\"font-size\", \"50px\");\n  $(\"#textquote, #author\").css(\"color\", colors[color]);\n  $.getJSON(apilink, quote, 'jsonp');\n}\n\nfunction openlink() {\n  $(\"#facebook-button\").attr(\"href\", \"https://facebook.com\");\n  $(\"#github-button\").attr(\"href\", \"https://github.com\");\n  $(\"#linkedin-button\").attr(\"href\", \"https://linkedin.com\");\n}\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  getQuote();\n  $(\"#newquote-button\").on(\"click\", getQuote);\n  $(\"#searchbox\").keydown(function (event) {\n    if (event.keyCode === 13) {\n      getQuote;\n    }\n  });\n  $(\"#twitter-button, #facebook-button, #github-button, #linkedin-button\").on(\"click\", openlink);\n});"
+          "source": "import $ from 'jquery';\nimport 'bootstrap';\nimport './style.scss';\nimport './fontawesome5';\nvar colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];\nvar apilink = \"https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?\";\n\nvar quote = function quote(data) {\n  $(\"#textquote\").text(data.quoteText);\n  $(\"#author\").text(data.quoteAuthor);\n  var tweet = \"https://twitter.com/intent/tweet?text=\" + '\"' + data.quoteText + '\"' + ' ' + data.quoteAuthor;\n  $(\"#twitter-button\").attr(\"href\", tweet);\n\n  if (data.quoteAuthor == \"\") {\n    $(\"#author\").text(\"NoName\");\n  }\n};\n\nfunction getQuote() {\n  var color = Math.floor(Math.random() * colors.length);\n  $(\".btn\").css(\"color\", \"white\");\n  $(\"body\").css(\"background-color\", colors[color]);\n  $(\".btn\").css(\"background-color\", colors[color]);\n  $(\".fa-minus, .fa-quote-left, .fa-quote-right\").css(\"color\", colors[color]);\n  $(\".fa-quote-right, .fa-quote-left\").css(\"font-size\", \"50px\");\n  $(\"#textquote, #author\").css(\"color\", colors[color]);\n  $.getJSON(apilink, quote, 'jsonp');\n}\n\nfunction openlink() {\n  $(\"#facebook-button\").attr(\"href\", \"https://facebook.com\");\n  $(\"#github-button\").attr(\"href\", \"https://github.com\");\n  $(\"#linkedin-button\").attr(\"href\", \"https://linkedin.com\");\n}\n\ngetQuote();\ndocument.addEventListener('DOMContentLoaded', function () {\n  $(\"#newquote-button\").on(\"click\", getQuote);\n  $(\"#newquote-button\").keydown(function (event) {\n    if (event.keyCode === 13 || 32) {\n      getQuote;\n    }\n  });\n  $(\"#twitter-button, #facebook-button, #github-button, #linkedin-button\").on(\"click\", openlink);\n});"
         },
         {
           "id": null,
