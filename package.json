@@ -6,7 +6,8 @@
   "scripts": {
     "developement": "webpack-dev-server --config webpack.developement.js --open --port 9000",
     "production": "webpack --config webpack.production.js",
-    "analyzer": "webpack-bundle-analyzer dist/stats.json --static"
+    "analyzer": "webpack-bundle-analyzer dist/stats.json --static",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
+    "gh-pages": "^2.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
