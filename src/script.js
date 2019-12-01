@@ -3,7 +3,7 @@ import 'bootstrap';
 import './style.scss';
 import './fontawesome5';
 
-const colors = ['#0040ff', '#00cc99', '#00ffff', '#bb33ff', '#ff0066', '#ff3300', '#669900', '#663300', '#e6e600', '#0099ff', '#ff00ff', '#ffcc00', '#ff3333', '#666699', '#00b300'];
+const colors = ['#0040ff', '#00cc99', '#6666ff', '#aa00ff', '#e6005c', '#e62e00', '#669900', '#663300', '#66ccff', '#0099ff', '#ff9966', '#cc00cc', '#ff1a1a', '#666699', '#00b300'];
 
 const apilink = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?";
 const quote = (data) => {
@@ -36,6 +36,12 @@ function openlink(){
  getQuote();
 
 document.addEventListener('DOMContentLoaded', () => {
+  $("#newquote-button").tooltip({
+    title: "You can use Space or Enter after button clicked",
+    delay: {show: 100, hide: 100},
+    trigger: 'hover',
+    placement: 'right'
+  });
   $("#newquote-button").on("click", getQuote);
   $("#newquote-button").keydown((event) => {
     if (event.keyCode === 13 || 32) {getQuote}
