@@ -15,14 +15,15 @@ module.exports = {
           name: 'common',
           chunks: 'all'
         },
-        styles: {//why i comment out this but still purge unused bootstrap
+        styles: {
           name: 'styles',
           test: /\.css$/,
           chunks: 'all',
           enforce: true
         }
       }
-    }
+    },
+    runtimeChunk: true
   },
   module: {
     rules: [

@@ -4,13 +4,18 @@ body {
   background-color: silver;
   text-align: center;
   font-family: monospace, 'Courier New', Courier;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 #quotebox {
   height: auto;
-  width: 80vw;
+  width: 90vw;
   font-size: 1.5em;
   background-color: mistyrose;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 30px 30px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px grey;
