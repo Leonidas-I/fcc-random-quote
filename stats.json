@@ -5,8 +5,8 @@
   ],
   "version": "4.41.2",
   "hash": "4e2337679b7c05c4c90d",
-  "time": 50672,
-  "builtAt": 1578803279052,
+  "time": 31107,
+  "builtAt": 1581655220355,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-random-quote/dist",
   "assetsByChunkName": {
@@ -1936,9 +1936,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/popper.js/dist/esm/popper.js",
-          "issuerId": 6,
-          "issuerName": "./node_modules/popper.js/dist/esm/popper.js",
+          "issuer": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
+          "issuerId": 4,
+          "issuerName": "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
           "issuerPath": [
             {
               "id": null,
@@ -1946,14 +1946,14 @@
               "name": "./src/script.js"
             },
             {
-              "id": 5,
-              "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/bootstrap/dist/js/bootstrap.js",
-              "name": "./node_modules/bootstrap/dist/js/bootstrap.js"
+              "id": null,
+              "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-random-quote/src/fontawesome5.js",
+              "name": "./src/fontawesome5.js"
             },
             {
-              "id": 6,
-              "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/popper.js/dist/esm/popper.js",
-              "name": "./node_modules/popper.js/dist/esm/popper.js"
+              "id": 4,
+              "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
+              "name": "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js"
             }
           ],
           "failed": false,
@@ -3561,9 +3561,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/popper.js/dist/esm/popper.js",
-      "issuerId": 6,
-      "issuerName": "./node_modules/popper.js/dist/esm/popper.js",
+      "issuer": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
+      "issuerId": 4,
+      "issuerName": "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
       "issuerPath": [
         {
           "id": null,
@@ -3571,14 +3571,14 @@
           "name": "./src/script.js"
         },
         {
-          "id": 5,
-          "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/bootstrap/dist/js/bootstrap.js",
-          "name": "./node_modules/bootstrap/dist/js/bootstrap.js"
+          "id": null,
+          "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-random-quote/src/fontawesome5.js",
+          "name": "./src/fontawesome5.js"
         },
         {
-          "id": 6,
-          "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/popper.js/dist/esm/popper.js",
-          "name": "./node_modules/popper.js/dist/esm/popper.js"
+          "id": 4,
+          "identifier": "/home/arcolinux/leonidas-project/fcc-random-quote/node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
+          "name": "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js"
         }
       ],
       "failed": false,
