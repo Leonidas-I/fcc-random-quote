@@ -4,7 +4,6 @@ const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
 const WebpackBundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const PurgeCssPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob'); 
@@ -20,20 +19,15 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'dist'),
     // publicPath: 'dist/'
   },
-  optimization: {
-    minimizer: [
-      new TerserWebpackPlugin(),
-      new HtmlWebpackPlugin({
-        template: './src/index.html',
-        minify: {
-          removeAttributeQuotes: true,
-          removeComments: true,
-          collapseWhitespace: true
-        }
-      })
-    ]
-  },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      minify: {
+        removeAttributeQuotes: true,
+        removeComments: true,
+        collapseWhitespace: true
+      }
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
