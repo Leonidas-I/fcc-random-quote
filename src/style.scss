@@ -5,17 +5,14 @@ body {
   text-align: center;
   font-family: monospace, 'Courier New', Courier;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
+  font-size: 0.75rem;
 }
+
 #quotebox {
   height: auto;
   width: 90vw;
-  font-size: 1.5em;
   background-color: mistyrose;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 30px 30px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px grey;
@@ -26,20 +23,43 @@ body {
     text-align: right;
   }
 }
-#newquote-button {
-  position: relative;
-}
-.btn {
-  font-size: 20px;
-}
+
 p {
   font-style: italic;
   a {
     text-decoration: none;
   }
 }
-@media screen and (max-width: 720px) {
+
+.fa-quote-right, .fa-quote-left {
+  transform: scale(0.5);
+}
+
+@media screen and (min-width: 720px) {
   body {
+    font-size: 1rem;
+  }
+  #quotebox {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  .fa-quote-right, .fa-quote-left {
     transform: scale(0.75);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: 1.5rem;
+  }
+  
+  #quotebox {
+    width: 70vw;
+    margin: 50px auto;
+  }
+
+  .fa-quote-right, .fa-quote-left {
+    transform: scale(1);
   }
 }

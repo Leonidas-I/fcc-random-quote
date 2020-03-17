@@ -40,11 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     title: "You can use Space or Enter after button clicked",
     delay: {show: 100, hide: 100},
     trigger: 'hover',
-    placement: 'right'
+    placement: 'bottom',
+    animation: true
   });
   $("#newquote-button").on("click", getQuote);
   $("#newquote-button").keydown((event) => {
     if (event.keyCode === 13 || 32) {getQuote}
   });    
-  $("#twitter-button, #facebook-button, #github-button, #linkedin-button",).on("click", openlink);
+  $("#facebook-button, #github-button, #linkedin-button",).on("click", openlink);
 });
